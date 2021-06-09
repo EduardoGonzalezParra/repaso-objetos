@@ -1,4 +1,6 @@
 package uaslp.objetos.figuras;
 
-public class LadoNoProvistoException extends DatoFaltanteException{
+import uaslp.objetos.figuras.DatoFaltanteException;
+
+public class LadoNoProvistoException extends DatoFaltanteException {
 }

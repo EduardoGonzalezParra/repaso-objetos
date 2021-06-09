@@ -1,10 +1,14 @@
 package uaslp.objetos.figuras;
 
-public class PoligonoRegular implements Figura{
+import uaslp.objetos.figuras.DatoFaltanteException;
+import uaslp.objetos.figuras.Figura;
+import uaslp.objetos.figuras.NumeroInvalidoDeLados;
+
+public class PoligonoRegular implements Figura {
     public double lado;
     public int numeroDeLados;
 
-    PoligonoRegular(int numeroDeLados) throws DatoFaltanteException{
+    PoligonoRegular(int numeroDeLados) throws DatoFaltanteException {
         if(lado < 5){
             throw new NumeroInvalidoDeLados("Número de lados válido a partir de 5");
         }

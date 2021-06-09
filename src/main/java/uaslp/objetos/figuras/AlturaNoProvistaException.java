@@ -1,4 +1,4 @@
 package uaslp.objetos.figuras;
 
-public class AlturaNoProvistaException extends DatoFaltanteException{
+public class AlturaNoProvistaException extends DatoFaltanteException {
 }

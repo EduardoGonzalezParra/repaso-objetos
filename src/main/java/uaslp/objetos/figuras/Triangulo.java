@@ -1,6 +1,11 @@
 package uaslp.objetos.figuras;
 
-public class Triangulo implements Figura{
+import uaslp.objetos.figuras.AlturaNoProvistaException;
+import uaslp.objetos.figuras.BaseNoProvistaException;
+import uaslp.objetos.figuras.DatoFaltanteException;
+import uaslp.objetos.figuras.Figura;
+
+public class Triangulo implements Figura {
     private double base;
     private double altura;
 
@@ -20,7 +25,7 @@ public class Triangulo implements Figura{
         this.altura = altura;
     }
 
-    public double getArea()throws DatoFaltanteException{
+    public double getArea()throws DatoFaltanteException {
         double area;
 
         if(base == 0){

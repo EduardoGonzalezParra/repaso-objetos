@@ -1,6 +1,6 @@
 package uaslp.objetos.figuras;
 
-public class Cuadrado implements Figura{
+public class Cuadrado implements Figura {
     private double lado;
 
     Cuadrado(){

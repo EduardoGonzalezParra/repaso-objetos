@@ -2,6 +2,9 @@ package uaslp.objetos.figuras;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import uaslp.objetos.figuras.Cuadrado;
+import uaslp.objetos.figuras.PoligonoRegular;
+import uaslp.objetos.figuras.Triangulo;
 
 public class Exercise1 {
 

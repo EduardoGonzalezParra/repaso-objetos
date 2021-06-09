@@ -1,7 +1,7 @@
 package uaslp.objetos.figuras;
 
-import java.util.List;
+import uaslp.objetos.figuras.DrawableItem;
 
-public interface Figura extends DrawableItem{
+public interface Figura extends DrawableItem {
     String getName();
 }

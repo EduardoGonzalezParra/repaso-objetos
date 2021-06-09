@@ -1,6 +1,8 @@
 package uaslp.objetos.figuras;
 
-public class TrianguloIsoceles extends  Triangulo{
+import uaslp.objetos.figuras.Triangulo;
+
+public class TrianguloIsoceles extends Triangulo {
 
     public String getDescription(){
         String description;

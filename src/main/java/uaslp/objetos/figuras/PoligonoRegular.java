@@ -4,7 +4,10 @@ public class PoligonoRegular implements Figura{
     public double lado;
     public int numeroDeLados;
 
-    PoligonoRegular(int numeroDeLados){
+    PoligonoRegular(int numeroDeLados) throws DatoFaltanteException{
+        if(lado < 5){
+            throw new NumeroInvalidoDeLados("Número de lados válido a partir de 5");
+        }
         this.numeroDeLados = numeroDeLados;
     }
 
@@ -21,6 +24,7 @@ public class PoligonoRegular implements Figura{
         double area;
         double perimetro;
         double apotema;
+
         perimetro=numeroDeLados*lado;
         apotema=(lado/2)/Math.tan(Math.toRadians((double)360/numeroDeLados)/2);
         area=perimetro*apotema/2;
@@ -34,6 +38,6 @@ public class PoligonoRegular implements Figura{
     @Override
     public String getName() {
         String name;
-        return name = "Poligono Regular";
+        return name = "Triangulo";
     }
 }

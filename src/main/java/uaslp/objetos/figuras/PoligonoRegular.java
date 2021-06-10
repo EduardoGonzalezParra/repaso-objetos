@@ -9,7 +9,7 @@ public class PoligonoRegular implements Figura {
     public int numeroDeLados;
 
     PoligonoRegular(int numeroDeLados) throws DatoFaltanteException {
-        if(lado < 5){
+        if(numeroDeLados < 5){
             throw new NumeroInvalidoDeLados("Número de lados válido a partir de 5");
         }
         this.numeroDeLados = numeroDeLados;
@@ -42,6 +42,6 @@ public class PoligonoRegular implements Figura {
     @Override
     public String getName() {
         String name;
-        return name = "Triangulo";
+        return name = "Poligono Regular";
     }
 }
